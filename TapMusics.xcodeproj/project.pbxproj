@@ -1,0 +1,526 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		004FA6701E02B26D000F186A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004FA66F1E02B26D000F186A /* AppDelegate.swift */; };
+		004FA6721E02B26D000F186A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004FA6711E02B26D000F186A /* ViewController.swift */; };
+		004FA6751E02B26D000F186A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 004FA6731E02B26D000F186A /* Main.storyboard */; };
+		004FA6771E02B26D000F186A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 004FA6761E02B26D000F186A /* Assets.xcassets */; };
+		004FA67A1E02B26D000F186A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 004FA6781E02B26D000F186A /* LaunchScreen.storyboard */; };
+		004FA6851E02B26D000F186A /* TapMusicsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004FA6841E02B26D000F186A /* TapMusicsTests.swift */; };
+		004FA6901E02B26D000F186A /* TapMusicsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004FA68F1E02B26D000F186A /* TapMusicsUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		004FA6811E02B26D000F186A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 004FA6641E02B26D000F186A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 004FA66B1E02B26D000F186A;
+			remoteInfo = TapMusics;
+		};
+		004FA68C1E02B26D000F186A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 004FA6641E02B26D000F186A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 004FA66B1E02B26D000F186A;
+			remoteInfo = TapMusics;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		004FA66C1E02B26D000F186A /* TapMusics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TapMusics.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		004FA66F1E02B26D000F186A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		004FA6711E02B26D000F186A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		004FA6741E02B26D000F186A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		004FA6761E02B26D000F186A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		004FA6791E02B26D000F186A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		004FA67B1E02B26D000F186A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		004FA6801E02B26D000F186A /* TapMusicsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TapMusicsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		004FA6841E02B26D000F186A /* TapMusicsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapMusicsTests.swift; sourceTree = "<group>"; };
+		004FA6861E02B26D000F186A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		004FA68B1E02B26D000F186A /* TapMusicsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TapMusicsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		004FA68F1E02B26D000F186A /* TapMusicsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapMusicsUITests.swift; sourceTree = "<group>"; };
+		004FA6911E02B26D000F186A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		004FA6691E02B26D000F186A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		004FA67D1E02B26D000F186A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		004FA6881E02B26D000F186A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		004FA6631E02B26D000F186A = {
+			isa = PBXGroup;
+			children = (
+				004FA66E1E02B26D000F186A /* TapMusics */,
+				004FA6831E02B26D000F186A /* TapMusicsTests */,
+				004FA68E1E02B26D000F186A /* TapMusicsUITests */,
+				004FA66D1E02B26D000F186A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		004FA66D1E02B26D000F186A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				004FA66C1E02B26D000F186A /* TapMusics.app */,
+				004FA6801E02B26D000F186A /* TapMusicsTests.xctest */,
+				004FA68B1E02B26D000F186A /* TapMusicsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		004FA66E1E02B26D000F186A /* TapMusics */ = {
+			isa = PBXGroup;
+			children = (
+				004FA66F1E02B26D000F186A /* AppDelegate.swift */,
+				004FA6711E02B26D000F186A /* ViewController.swift */,
+				004FA6731E02B26D000F186A /* Main.storyboard */,
+				004FA6761E02B26D000F186A /* Assets.xcassets */,
+				004FA6781E02B26D000F186A /* LaunchScreen.storyboard */,
+				004FA67B1E02B26D000F186A /* Info.plist */,
+			);
+			path = TapMusics;
+			sourceTree = "<group>";
+		};
+		004FA6831E02B26D000F186A /* TapMusicsTests */ = {
+			isa = PBXGroup;
+			children = (
+				004FA6841E02B26D000F186A /* TapMusicsTests.swift */,
+				004FA6861E02B26D000F186A /* Info.plist */,
+			);
+			path = TapMusicsTests;
+			sourceTree = "<group>";
+		};
+		004FA68E1E02B26D000F186A /* TapMusicsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				004FA68F1E02B26D000F186A /* TapMusicsUITests.swift */,
+				004FA6911E02B26D000F186A /* Info.plist */,
+			);
+			path = TapMusicsUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		004FA66B1E02B26D000F186A /* TapMusics */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 004FA6941E02B26D000F186A /* Build configuration list for PBXNativeTarget "TapMusics" */;
+			buildPhases = (
+				004FA6681E02B26D000F186A /* Sources */,
+				004FA6691E02B26D000F186A /* Frameworks */,
+				004FA66A1E02B26D000F186A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TapMusics;
+			productName = TapMusics;
+			productReference = 004FA66C1E02B26D000F186A /* TapMusics.app */;
+			productType = "com.apple.product-type.application";
+		};
+		004FA67F1E02B26D000F186A /* TapMusicsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 004FA6971E02B26D000F186A /* Build configuration list for PBXNativeTarget "TapMusicsTests" */;
+			buildPhases = (
+				004FA67C1E02B26D000F186A /* Sources */,
+				004FA67D1E02B26D000F186A /* Frameworks */,
+				004FA67E1E02B26D000F186A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				004FA6821E02B26D000F186A /* PBXTargetDependency */,
+			);
+			name = TapMusicsTests;
+			productName = TapMusicsTests;
+			productReference = 004FA6801E02B26D000F186A /* TapMusicsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		004FA68A1E02B26D000F186A /* TapMusicsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 004FA69A1E02B26D000F186A /* Build configuration list for PBXNativeTarget "TapMusicsUITests" */;
+			buildPhases = (
+				004FA6871E02B26D000F186A /* Sources */,
+				004FA6881E02B26D000F186A /* Frameworks */,
+				004FA6891E02B26D000F186A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				004FA68D1E02B26D000F186A /* PBXTargetDependency */,
+			);
+			name = TapMusicsUITests;
+			productName = TapMusicsUITests;
+			productReference = 004FA68B1E02B26D000F186A /* TapMusicsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		004FA6641E02B26D000F186A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = MenesS;
+				TargetAttributes = {
+					004FA66B1E02B26D000F186A = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+					};
+					004FA67F1E02B26D000F186A = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 004FA66B1E02B26D000F186A;
+					};
+					004FA68A1E02B26D000F186A = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 004FA66B1E02B26D000F186A;
+					};
+				};
+			};
+			buildConfigurationList = 004FA6671E02B26D000F186A /* Build configuration list for PBXProject "TapMusics" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 004FA6631E02B26D000F186A;
+			productRefGroup = 004FA66D1E02B26D000F186A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				004FA66B1E02B26D000F186A /* TapMusics */,
+				004FA67F1E02B26D000F186A /* TapMusicsTests */,
+				004FA68A1E02B26D000F186A /* TapMusicsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		004FA66A1E02B26D000F186A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				004FA67A1E02B26D000F186A /* LaunchScreen.storyboard in Resources */,
+				004FA6771E02B26D000F186A /* Assets.xcassets in Resources */,
+				004FA6751E02B26D000F186A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		004FA67E1E02B26D000F186A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		004FA6891E02B26D000F186A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		004FA6681E02B26D000F186A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				004FA6721E02B26D000F186A /* ViewController.swift in Sources */,
+				004FA6701E02B26D000F186A /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		004FA67C1E02B26D000F186A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				004FA6851E02B26D000F186A /* TapMusicsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		004FA6871E02B26D000F186A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				004FA6901E02B26D000F186A /* TapMusicsUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		004FA6821E02B26D000F186A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 004FA66B1E02B26D000F186A /* TapMusics */;
+			targetProxy = 004FA6811E02B26D000F186A /* PBXContainerItemProxy */;
+		};
+		004FA68D1E02B26D000F186A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 004FA66B1E02B26D000F186A /* TapMusics */;
+			targetProxy = 004FA68C1E02B26D000F186A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		004FA6731E02B26D000F186A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				004FA6741E02B26D000F186A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		004FA6781E02B26D000F186A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				004FA6791E02B26D000F186A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		004FA6921E02B26D000F186A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		004FA6931E02B26D000F186A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		004FA6951E02B26D000F186A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TapMusics/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ICOM.TapMusics;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		004FA6961E02B26D000F186A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TapMusics/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ICOM.TapMusics;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		004FA6981E02B26D000F186A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TapMusicsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ICOM.TapMusicsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TapMusics.app/TapMusics";
+			};
+			name = Debug;
+		};
+		004FA6991E02B26D000F186A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TapMusicsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ICOM.TapMusicsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TapMusics.app/TapMusics";
+			};
+			name = Release;
+		};
+		004FA69B1E02B26D000F186A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = TapMusicsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ICOM.TapMusicsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = TapMusics;
+			};
+			name = Debug;
+		};
+		004FA69C1E02B26D000F186A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = TapMusicsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ICOM.TapMusicsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = TapMusics;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		004FA6671E02B26D000F186A /* Build configuration list for PBXProject "TapMusics" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				004FA6921E02B26D000F186A /* Debug */,
+				004FA6931E02B26D000F186A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		004FA6941E02B26D000F186A /* Build configuration list for PBXNativeTarget "TapMusics" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				004FA6951E02B26D000F186A /* Debug */,
+				004FA6961E02B26D000F186A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		004FA6971E02B26D000F186A /* Build configuration list for PBXNativeTarget "TapMusicsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				004FA6981E02B26D000F186A /* Debug */,
+				004FA6991E02B26D000F186A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		004FA69A1E02B26D000F186A /* Build configuration list for PBXNativeTarget "TapMusicsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				004FA69B1E02B26D000F186A /* Debug */,
+				004FA69C1E02B26D000F186A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 004FA6641E02B26D000F186A /* Project object */;
+}
