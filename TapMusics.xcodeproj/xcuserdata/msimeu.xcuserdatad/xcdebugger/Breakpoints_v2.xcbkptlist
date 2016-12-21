@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TapMusics/ViewController.swift"
-            timestampString = "504015904.599896"
+            timestampString = "504021657.966124"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "67"
-            endingLineNumber = "67"
+            startingLineNumber = "81"
+            endingLineNumber = "81"
             landmarkName = "viewDidLoad()"
             landmarkType = "7">
          </BreakpointContent>
@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TapMusics/ViewController.swift"
-            timestampString = "504015904.599896"
+            timestampString = "504021657.966124"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "107"
-            endingLineNumber = "107"
+            startingLineNumber = "159"
+            endingLineNumber = "159"
             landmarkName = "btnBeat3(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -42,11 +42,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TapMusics/ViewController.swift"
-            timestampString = "504015904.599896"
+            timestampString = "504021657.966124"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "50"
-            endingLineNumber = "50"
+            startingLineNumber = "73"
+            endingLineNumber = "73"
             landmarkName = "viewDidLoad()"
             landmarkType = "7">
          </BreakpointContent>
@@ -58,11 +58,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TapMusics/ViewController.swift"
-            timestampString = "504015904.599896"
+            timestampString = "504021657.966124"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "94"
-            endingLineNumber = "94"
+            startingLineNumber = "146"
+            endingLineNumber = "146"
             landmarkName = "btnBeat2(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -74,11 +74,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TapMusics/ViewController.swift"
-            timestampString = "504015904.599896"
+            timestampString = "504021657.966124"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "92"
-            endingLineNumber = "92"
+            startingLineNumber = "144"
+            endingLineNumber = "144"
             landmarkName = "btnBeat1(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -183,11 +183,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TapMusics/ViewController.swift"
-            timestampString = "504015904.599896"
+            timestampString = "504021657.966124"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "79"
-            endingLineNumber = "79"
+            startingLineNumber = "131"
+            endingLineNumber = "131"
             landmarkName = "btnBeat1(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -215,11 +215,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TapMusics/ViewController.swift"
-            timestampString = "504015904.599896"
+            timestampString = "504021657.966124"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "92"
-            endingLineNumber = "92"
+            startingLineNumber = "144"
+            endingLineNumber = "144"
             landmarkName = "btnBeat1(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -311,11 +311,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TapMusics/ViewController.swift"
-            timestampString = "504015904.599896"
+            timestampString = "504021657.966124"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "78"
-            endingLineNumber = "78"
+            startingLineNumber = "130"
+            endingLineNumber = "130"
             landmarkName = "ViewController"
             landmarkType = "3">
          </BreakpointContent>
@@ -423,11 +423,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TapMusics/ViewController.swift"
-            timestampString = "504015904.599896"
+            timestampString = "504021657.966124"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "89"
-            endingLineNumber = "89"
+            startingLineNumber = "141"
+            endingLineNumber = "141"
             landmarkName = "btnBeat1(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -599,7 +599,7 @@
                   moduleName = "TapMusics"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/msimeu/Documents/iOS/Test-projet/TapMusics/TapMusics/Bouton.swift"
-                  timestampString = "504015413.50605"
+                  timestampString = "504026375.083399"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "14"
@@ -614,7 +614,7 @@
                   moduleName = "TapMusics"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/msimeu/Documents/iOS/Test-projet/TapMusics/TapMusics/Bouton.swift"
-                  timestampString = "504015413.507129"
+                  timestampString = "504026375.084582"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "0"
@@ -631,11 +631,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TapMusics/ViewController.swift"
-            timestampString = "504015904.599896"
+            timestampString = "504021657.966124"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "85"
-            endingLineNumber = "85"
+            startingLineNumber = "137"
+            endingLineNumber = "137"
             landmarkName = "btnBeat1(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -647,11 +647,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TapMusics/ViewController.swift"
-            timestampString = "504015904.599896"
+            timestampString = "504021657.966124"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "86"
-            endingLineNumber = "86"
+            startingLineNumber = "138"
+            endingLineNumber = "138"
             landmarkName = "btnBeat1(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -679,7 +679,7 @@
                   moduleName = "TapMusics"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/msimeu/Documents/iOS/Test-projet/TapMusics/TapMusics/Bouton.swift"
-                  timestampString = "504015413.517455"
+                  timestampString = "504026375.095605"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "40"
@@ -694,7 +694,7 @@
                   moduleName = "TapMusics"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/msimeu/Documents/iOS/Test-projet/TapMusics/TapMusics/Bouton.swift"
-                  timestampString = "504015413.518543"
+                  timestampString = "504026375.09694"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "40"
@@ -741,7 +741,7 @@
                   moduleName = "TapMusics"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/msimeu/Documents/iOS/Test-projet/TapMusics/TapMusics/ViewController.swift"
-                  timestampString = "504015413.522714"
+                  timestampString = "504026375.103607"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "0"
@@ -756,12 +756,12 @@
                   moduleName = "TapMusics"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/msimeu/Documents/iOS/Test-projet/TapMusics/TapMusics/ViewController.swift"
-                  timestampString = "504015413.523749"
+                  timestampString = "504026375.104724"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "15"
-                  endingLineNumber = "15"
-                  offsetFromSymbolStart = "200">
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "356">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -771,7 +771,7 @@
                   moduleName = "TapMusics"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/msimeu/Documents/iOS/Test-projet/TapMusics/TapMusics/ViewController.swift"
-                  timestampString = "504015413.524772"
+                  timestampString = "504026375.105792"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "0"
@@ -786,7 +786,7 @@
                   moduleName = "TapMusics"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/msimeu/Documents/iOS/Test-projet/TapMusics/TapMusics/ViewController.swift"
-                  timestampString = "504015413.52592"
+                  timestampString = "504026375.106844"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "0"
@@ -801,12 +801,12 @@
                   moduleName = "TapMusics"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/msimeu/Documents/iOS/Test-projet/TapMusics/TapMusics/ViewController.swift"
-                  timestampString = "504015413.527009"
+                  timestampString = "504026375.107886"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "15"
-                  endingLineNumber = "15"
-                  offsetFromSymbolStart = "128">
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "272">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -834,7 +834,7 @@
                   moduleName = "TapMusics"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/msimeu/Documents/iOS/Test-projet/TapMusics/TapMusics/ViewController.swift"
-                  timestampString = "504015413.530021"
+                  timestampString = "504026375.112488"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "0"
@@ -849,12 +849,12 @@
                   moduleName = "TapMusics"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/msimeu/Documents/iOS/Test-projet/TapMusics/TapMusics/ViewController.swift"
-                  timestampString = "504015413.531194"
+                  timestampString = "504026375.113576"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "15"
-                  endingLineNumber = "15"
-                  offsetFromSymbolStart = "200">
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "356">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -864,7 +864,7 @@
                   moduleName = "TapMusics"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/msimeu/Documents/iOS/Test-projet/TapMusics/TapMusics/ViewController.swift"
-                  timestampString = "504015413.532291"
+                  timestampString = "504026375.114595"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "0"
@@ -879,7 +879,7 @@
                   moduleName = "TapMusics"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/msimeu/Documents/iOS/Test-projet/TapMusics/TapMusics/ViewController.swift"
-                  timestampString = "504015413.533365"
+                  timestampString = "504026375.115652"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "0"
@@ -894,12 +894,90 @@
                   moduleName = "TapMusics"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/msimeu/Documents/iOS/Test-projet/TapMusics/TapMusics/ViewController.swift"
-                  timestampString = "504015413.534481"
+                  timestampString = "504026375.11674"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "15"
-                  endingLineNumber = "15"
-                  offsetFromSymbolStart = "128">
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "272">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TapMusics/ViewController.swift"
+            timestampString = "504026372.225197"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
+            landmarkName = "ViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TapMusics.ViewController.btnBeat1.getter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UIButton&gt;"
+                  moduleName = "TapMusics"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/msimeu/Documents/iOS/Test-projet/TapMusics/TapMusics/ViewController.swift"
+                  timestampString = "504026372.75106"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "40"
+                  endingLineNumber = "40"
+                  offsetFromSymbolStart = "56">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TapMusics.ViewController.btnBeat1.setter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UIButton&gt;"
+                  moduleName = "TapMusics"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/msimeu/Documents/iOS/Test-projet/TapMusics/TapMusics/ViewController.swift"
+                  timestampString = "504026372.752273"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "40"
+                  endingLineNumber = "40"
+                  offsetFromSymbolStart = "72">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TapMusics.ViewController.init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; TapMusics.ViewController"
+                  moduleName = "TapMusics"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/msimeu/Documents/iOS/Test-projet/TapMusics/TapMusics/ViewController.swift"
+                  timestampString = "504026372.753599"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "40"
+                  endingLineNumber = "40"
+                  offsetFromSymbolStart = "832">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TapMusics.ViewController.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;TapMusics.ViewController&gt;"
+                  moduleName = "TapMusics"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/msimeu/Documents/iOS/Test-projet/TapMusics/TapMusics/ViewController.swift"
+                  timestampString = "504026372.754741"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "40"
+                  endingLineNumber = "40"
+                  offsetFromSymbolStart = "736">
                </Location>
             </Locations>
          </BreakpointContent>
