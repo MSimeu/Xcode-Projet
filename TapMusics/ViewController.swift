@@ -101,6 +101,9 @@ class ViewController: UIViewController , AVAudioPlayerDelegate {
     var player1: [AVAudioPlayer:UIButton] = [:]
     var sound1: [String] = ["beat11","beat12","beat13","beat14","beat15"]
     var sound2: [String] = ["coeur1","coeur2","coeur3","coeur4","coeur5"]
+    var sound3: [String] = ["melo1","melo2","melo3","melo4","melo5"]
+    var sound4: [String] = ["voix1","voix2","voix3","voix4","voix5"]
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -156,6 +159,42 @@ class ViewController: UIViewController , AVAudioPlayerDelegate {
         if (bouton25==nil){
             bouton25 = Bouton(btnBeat: self.btnChorus5, sound: self.sound2[4])
         }
+        
+        //col3
+        if (bouton31==nil){
+            bouton31 = Bouton(btnBeat: self.btnMelo1, sound: self.sound3[0])
+        }
+        if (bouton32==nil){
+            bouton32 = Bouton(btnBeat: self.btnMelo2, sound: self.sound3[1])
+        }
+        if (bouton33==nil){
+            bouton33 = Bouton(btnBeat: self.btnMelo3, sound: self.sound3[2])
+        }
+        if (bouton34==nil){
+            bouton34 = Bouton(btnBeat: self.btnMelo4, sound: self.sound3[3])
+        }
+        if (bouton35==nil){
+            bouton35 = Bouton(btnBeat: self.btnMelo5, sound: self.sound3[4])
+        }
+        
+        //col4
+        if (bouton41==nil){
+            bouton41 = Bouton(btnBeat: self.btnVoix1, sound: self.sound4[0])
+        }
+        if (bouton42==nil){
+            bouton42 = Bouton(btnBeat: self.btnVoix2, sound: self.sound4[1])
+        }
+        if (bouton43==nil){
+            bouton43 = Bouton(btnBeat: self.btnVoix3, sound: self.sound4[2])
+        }
+        if (bouton44==nil){
+            bouton44 = Bouton(btnBeat: self.btnVoix4, sound: self.sound4[3])
+        }
+        if (bouton45==nil){
+            bouton45 = Bouton(btnBeat: self.btnVoix5, sound: self.sound4[4])
+        }
+
+
 
     
     }
@@ -289,6 +328,156 @@ class ViewController: UIViewController , AVAudioPlayerDelegate {
             bouton25?.stopSound()
         }
     }
+    
+
+    
+    //Melodies
+    
+    @IBAction func btnMelo1(_ sender: Any) {
+        if ( !self.btn31Bool ){
+            self.btn31Bool = true
+            
+            bouton31?.playSound()
+            
+            
+        }else{
+            self.btn31Bool = false
+            bouton31?.stopSound()
+        }
+
+    }
+ 
+    @IBAction func btnMelo2(_ sender: Any) {
+        if ( !self.btn32Bool ){
+            self.btn32Bool = true
+            
+            bouton32?.playSound()
+            
+            
+        }else{
+            self.btn32Bool = false
+            bouton32?.stopSound()
+        }
+
+    }
+    
+    @IBAction func btnMelo3(_ sender: Any) {
+        
+        if ( !self.btn33Bool ){
+            self.btn33Bool = true
+            
+            bouton33?.playSound()
+            
+            
+        }else{
+            self.btn33Bool = false
+            bouton33?.stopSound()
+        }
+
+    }
+    
+    @IBAction func btnMelo4(_ sender: Any) {
+        if ( !self.btn34Bool ){
+            self.btn34Bool = true
+            
+            bouton34?.playSound()
+            
+            
+        }else{
+            self.btn34Bool = false
+            bouton34?.stopSound()
+        }
+
+    }
+ 
+    
+    @IBAction func btnMelo5(_ sender: Any) {
+        if ( !self.btn35Bool ){
+            self.btn35Bool = true
+            
+            bouton35?.playSound()
+            
+            
+        }else{
+            self.btn35Bool = false
+            bouton35?.stopSound()
+        }
+
+    }
+    
+    
+    
+    //Voix
+    @IBAction func btnVoix1(_ sender: Any) {
+        
+        if ( !self.btn41Bool ){
+            self.btn41Bool = true
+            
+            bouton41?.playSound()
+            
+            
+        }else{
+            self.btn41Bool = false
+            bouton41?.stopSound()
+        }
+
+    }
+    
+    @IBAction func btnVoix2(_ sender: Any) {
+        
+        if ( !self.btn42Bool ){
+            self.btn42Bool = true
+            
+            bouton42?.playSound()
+            
+            
+        }else{
+            self.btn42Bool = false
+            bouton42?.stopSound()
+        }
+    }
+
+    
+    @IBAction func btnVoix3(_ sender: Any) {
+        
+        if ( !self.btn43Bool ){
+            self.btn43Bool = true
+            
+            bouton43?.playSound()
+            
+            
+        }else{
+            self.btn43Bool = false
+            bouton43?.stopSound()
+        }
+    }
+    
+    @IBAction func btnVoix4(_ sender: Any) {
+        if ( !self.btn44Bool ){
+            self.btn44Bool = true
+            
+            bouton44?.playSound()
+            
+            
+        }else{
+            self.btn44Bool = false
+            bouton44?.stopSound()
+        }
+    }
+    
+    @IBAction func btnVoix5(_ sender: Any) {
+        if ( !self.btn45Bool ){
+            self.btn45Bool = true
+            
+            bouton45?.playSound()
+            
+            
+        }else{
+            self.btn45Bool = false
+            bouton45?.stopSound()
+        }
+    }
+    
 
     @IBAction func playerStop(_ sender: Any) {
         //col1
@@ -303,6 +492,18 @@ class ViewController: UIViewController , AVAudioPlayerDelegate {
         bouton23?.stopSound()
         bouton24?.stopSound()
         bouton25?.stopSound()
+        
+        bouton31?.stopSound()
+        bouton32?.stopSound()
+        bouton33?.stopSound()
+        bouton34?.stopSound()
+        bouton35?.stopSound()
+        
+        bouton41?.stopSound()
+        bouton42?.stopSound()
+        bouton43?.stopSound()
+        bouton44?.stopSound()
+        bouton45?.stopSound()
 
     }
     
