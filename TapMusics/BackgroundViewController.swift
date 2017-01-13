@@ -82,10 +82,10 @@ class BackgroundViewController: UIViewController, UIImagePickerControllerDelegat
                 imagePicker.cameraCaptureMode = .photo
                 present(imagePicker, animated: true, completion: {})
             } else {
-                print("Rear camera doesn't exist")
+                print("Rear camera indisponible")
             }
         } else {
-            print("Camera inaccessable")
+            print("Camera inaccessible")
         }
     }
    
@@ -109,15 +109,7 @@ class BackgroundViewController: UIViewController, UIImagePickerControllerDelegat
         }
         picker.dismiss(animated: true, completion: nil)
     }
-    
-   
-    
-    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
-        print("User canceled image")
-        dismiss(animated: true, completion: {
-            // Anything you want to happen when the user selects cancel
-        })
-    }
+
 
    
     /*
