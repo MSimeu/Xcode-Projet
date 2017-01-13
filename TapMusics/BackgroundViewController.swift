@@ -22,14 +22,14 @@ class BackgroundViewController: UIViewController, UIImagePickerControllerDelegat
     
     
     //Imagecontroller
-    let picker = UIImagePickerController()
+    let imagePicker = UIImagePickerController()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         choice2outlet.alpha = 0.5
         choice3outlet.alpha = 0.5
         
-        picker.delegate = self
+        imagePicker.delegate = self
         let tapGestureRecognizer = UITapGestureRecognizer(target:self, action:#selector(imageTapped(img:)))
         ImageChoice?.isUserInteractionEnabled = true
         ImageChoice?.addGestureRecognizer(tapGestureRecognizer)
@@ -73,8 +73,41 @@ class BackgroundViewController: UIViewController, UIImagePickerControllerDelegat
         ImageChoice?.backgroundColor = color
     }
     
-
     // ...
+    @IBAction func takePic(_ sender: Any) {
+        if (UIImagePickerController.isSourceTypeAvailable(.camera)) {
+            if UIImagePickerController.availableCaptureModes(for: .rear) != nil {
+                imagePicker.allowsEditing = false
+                imagePicker.sourceType = .camera
+                imagePicker.cameraCaptureMode = .photo
+                present(imagePicker, animated: true, completion: {})
+            } else {
+                print("Rear camera doesn't exist")
+            }
+        } else {
+            print("Camera inaccessable")
+        }
+    }
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+        
+        if let pickedImage = info[UIImagePickerControllerOriginalImage] as? UIImage { // As? UIImage permet de vérifier le type renvoyé (image ou non)
+            //Image taken temporarly as "UIImage"
+            ImageChoice?.contentMode = .scaleAspectFill
+            ImageChoice?.image = pickedImage
+            
+        }
+        picker.dismiss(animated: true, completion: nil)
+    }
+    
+   
+    
+    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+        print("User canceled image")
+        dismiss(animated: true, completion: {
+            // Anything you want to happen when the user selects cancel
+        })
+    }
 
    
     /*

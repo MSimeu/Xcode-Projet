@@ -11,12 +11,20 @@ import CoreLocation
 
 class HomeViewController: UIViewController ,UITableViewDelegate , UITableViewDataSource,CLLocationManagerDelegate{
     
+    
+    //API Météo
+    
+    private let openWeatherMapBaseURL = "http://api.openweathermap.org/data/2.5/weather"
+    private let openWeatherMapAPIKey = "a16d5a35a649b064ce60f14256407e15"
+    
+    
     @IBOutlet weak var tableView: UITableView!
     var soundStyle = ["Techno","Hip-Hop","Trance","Indus"]
     //BG
     @IBOutlet weak var background: UIImageView!
     var color : UIColor = UIColor(red: 44.0/255.0, green: 62.0/255.0, blue: 80.0/255.0, alpha: 1.0)
-    var isCol : Bool = false
+    
+    
     
     
     //Son techno
@@ -41,24 +49,20 @@ class HomeViewController: UIViewController ,UITableViewDelegate , UITableViewDat
     var addresse: String = ""
     //TIME
     @IBOutlet weak var timeLabel: UILabel!
+    
+    //
 
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.dataSource = self
         tableView.delegate = self
-        
-        if !isCol {
-            isCol = true
-            self.color = UIColor(red: 44.0/255.0, green: 62.0/255.0, blue: 80.0/255.0, alpha: 1.0)
-        }
         background.backgroundColor = color
         
         _ = Timer.scheduledTimer(timeInterval: 0.4, target: self, selector: #selector(self.update), userInfo: nil, repeats: true);
 
         
         //Location 
-        
-        
+
         locationManager.delegate = self
         locationManager.requestAlwaysAuthorization()
         locationManager.startUpdatingLocation()
@@ -95,6 +99,8 @@ class HomeViewController: UIViewController ,UITableViewDelegate , UITableViewDat
         
         performSegue(withIdentifier: "oneSegue", sender: cell?.textLabel?.text)
     }
+    
+
     
     
     func currentTime() -> String {
@@ -177,12 +183,28 @@ class HomeViewController: UIViewController ,UITableViewDelegate , UITableViewDat
             
             
         }
+        
     }
     
    
     @IBAction func unwindToHome(segue: UIStoryboardSegue) {
-        print("Menes Menes Menes")
+        
+        print (segue.source)
+        let SrcViewController : BackgroundViewController = segue.source as! BackgroundViewController
+        if (SrcViewController.ImageChoice?.image != nil ){
+            self.background.image = SrcViewController.ImageChoice?.image
+        
+        }else{
+            self.background.image = nil
+        
+            self.color = (SrcViewController.ImageChoice?.backgroundColor)!
+            
+        }
+        // print("Menes Menes Menes")
     }
+    
+    
+
 
     /*
     // MARK: - Navigation
