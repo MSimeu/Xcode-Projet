@@ -97,6 +97,12 @@ class ViewController: UIViewController , AVAudioPlayerDelegate {
     var btn44Bool : Bool = false
     var btn45Bool : Bool = false
     
+    //titre
+    
+    @IBOutlet weak var titleLabel: UILabel!
+    var titre : String = ""
+
+    
     //Array
     var player1: [AVAudioPlayer:UIButton] = [:]
     var sound1: [String] = ["beat11","beat12","beat13","beat14","beat15"]
@@ -108,22 +114,31 @@ class ViewController: UIViewController , AVAudioPlayerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
         boutoninit()
         
-        
-        
-        
-        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        pageinit()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    func pageinit(){
+        self.titre = ""
+        
+    }
     
 
 
     func boutoninit(){
+        //initialisation du titre
+        self.titleLabel.text = self.titre
+
+        
         //initialisation des boutons
         
         //col1
@@ -506,6 +521,7 @@ class ViewController: UIViewController , AVAudioPlayerDelegate {
         bouton45?.stopSound()
 
     }
+    
     
     
 

@@ -68,6 +68,18 @@ class Bouton: NSObject , AVAudioPlayerDelegate {
         }
     
     }
+    
+    func isPlaying() -> Bool {
+        if(self.audioPlayerBtn.isPlaying){
+            
+            return true
+            
+        }else{
+            return false
+        }
+    
+    
+    }
 
 
 }

@@ -7,9 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		002F235F1E27C49D00C17827 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002F235E1E27C49D00C17827 /* HomeViewController.swift */; };
+		002F23621E27E01300C17827 /* beat21.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 002F23611E27E01300C17827 /* beat21.mp3 */; };
+		002F23641E27E05500C17827 /* beat22.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 002F23631E27E05500C17827 /* beat22.mp3 */; };
+		002F23661E27E05D00C17827 /* beat23.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 002F23651E27E05D00C17827 /* beat23.mp3 */; };
+		002F23681E27E06400C17827 /* beat24.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 002F23671E27E06400C17827 /* beat24.mp3 */; };
+		002F236A1E27E06A00C17827 /* beat25.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 002F23691E27E06A00C17827 /* beat25.mp3 */; };
+		002F236C1E27E14500C17827 /* effect21.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 002F236B1E27E14500C17827 /* effect21.mp3 */; };
+		002F236E1E27E1C600C17827 /* effect22.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 002F236D1E27E1C600C17827 /* effect22.mp3 */; };
+		002F23701E27E1DD00C17827 /* effect23.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 002F236F1E27E1DD00C17827 /* effect23.mp3 */; };
+		002F23721E27E1E200C17827 /* effect24.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 002F23711E27E1E200C17827 /* effect24.mp3 */; };
+		002F23741E27E1E700C17827 /* effect25.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 002F23731E27E1E700C17827 /* effect25.mp3 */; };
+		002F23761E27E21700C17827 /* melo21.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 002F23751E27E21700C17827 /* melo21.mp3 */; };
+		002F23781E27E21F00C17827 /* melo22.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 002F23771E27E21F00C17827 /* melo22.mp3 */; };
+		002F237A1E27E22500C17827 /* melo23.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 002F23791E27E22500C17827 /* melo23.mp3 */; };
+		002F237C1E27E22B00C17827 /* melo24.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 002F237B1E27E22B00C17827 /* melo24.mp3 */; };
+		002F237E1E27E23100C17827 /* melo25.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 002F237D1E27E23100C17827 /* melo25.mp3 */; };
+		002F23801E27E23A00C17827 /* voix21.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 002F237F1E27E23A00C17827 /* voix21.mp3 */; };
+		002F23821E27E24200C17827 /* voix22.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 002F23811E27E24200C17827 /* voix22.mp3 */; };
+		002F23841E27E24900C17827 /* voix23.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 002F23831E27E24900C17827 /* voix23.mp3 */; };
+		002F23861E27E25200C17827 /* voix24.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 002F23851E27E25200C17827 /* voix24.mp3 */; };
+		002F23881E27E25700C17827 /* voix25.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 002F23871E27E25700C17827 /* voix25.mp3 */; };
 		004FA6701E02B26D000F186A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004FA66F1E02B26D000F186A /* AppDelegate.swift */; };
 		004FA6721E02B26D000F186A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004FA6711E02B26D000F186A /* ViewController.swift */; };
-		004FA6751E02B26D000F186A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 004FA6731E02B26D000F186A /* Main.storyboard */; };
 		004FA6771E02B26D000F186A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 004FA6761E02B26D000F186A /* Assets.xcassets */; };
 		004FA67A1E02B26D000F186A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 004FA6781E02B26D000F186A /* LaunchScreen.storyboard */; };
 		004FA6851E02B26D000F186A /* TapMusicsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004FA6841E02B26D000F186A /* TapMusicsTests.swift */; };
@@ -35,6 +55,8 @@
 		00DFCC9A1E0ADCFB0059C445 /* voix3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 00DFCC951E0ADCFB0059C445 /* voix3.mp3 */; };
 		00DFCC9B1E0ADCFB0059C445 /* voix4.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 00DFCC961E0ADCFB0059C445 /* voix4.mp3 */; };
 		00DFCC9C1E0ADCFB0059C445 /* voix5.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 00DFCC971E0ADCFB0059C445 /* voix5.mp3 */; };
+		00FC417A1E28BCBD00627F81 /* BackgroundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00FC41791E28BCBD00627F81 /* BackgroundViewController.swift */; };
+		00FC417C1E28EAFB00627F81 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00FC417B1E28EAFB00627F81 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,10 +77,30 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		002F235E1E27C49D00C17827 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		002F23611E27E01300C17827 /* beat21.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = beat21.mp3; sourceTree = "<group>"; };
+		002F23631E27E05500C17827 /* beat22.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = beat22.mp3; sourceTree = "<group>"; };
+		002F23651E27E05D00C17827 /* beat23.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = beat23.mp3; sourceTree = "<group>"; };
+		002F23671E27E06400C17827 /* beat24.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = beat24.mp3; sourceTree = "<group>"; };
+		002F23691E27E06A00C17827 /* beat25.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = beat25.mp3; sourceTree = "<group>"; };
+		002F236B1E27E14500C17827 /* effect21.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = effect21.mp3; sourceTree = "<group>"; };
+		002F236D1E27E1C600C17827 /* effect22.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = effect22.mp3; sourceTree = "<group>"; };
+		002F236F1E27E1DD00C17827 /* effect23.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = effect23.mp3; sourceTree = "<group>"; };
+		002F23711E27E1E200C17827 /* effect24.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = effect24.mp3; sourceTree = "<group>"; };
+		002F23731E27E1E700C17827 /* effect25.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = effect25.mp3; sourceTree = "<group>"; };
+		002F23751E27E21700C17827 /* melo21.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = melo21.mp3; sourceTree = "<group>"; };
+		002F23771E27E21F00C17827 /* melo22.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = melo22.mp3; sourceTree = "<group>"; };
+		002F23791E27E22500C17827 /* melo23.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = melo23.mp3; sourceTree = "<group>"; };
+		002F237B1E27E22B00C17827 /* melo24.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = melo24.mp3; sourceTree = "<group>"; };
+		002F237D1E27E23100C17827 /* melo25.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = melo25.mp3; sourceTree = "<group>"; };
+		002F237F1E27E23A00C17827 /* voix21.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = voix21.mp3; sourceTree = "<group>"; };
+		002F23811E27E24200C17827 /* voix22.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = voix22.mp3; sourceTree = "<group>"; };
+		002F23831E27E24900C17827 /* voix23.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = voix23.mp3; sourceTree = "<group>"; };
+		002F23851E27E25200C17827 /* voix24.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = voix24.mp3; sourceTree = "<group>"; };
+		002F23871E27E25700C17827 /* voix25.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = voix25.mp3; sourceTree = "<group>"; };
 		004FA66C1E02B26D000F186A /* TapMusics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TapMusics.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		004FA66F1E02B26D000F186A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		004FA6711E02B26D000F186A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		004FA6741E02B26D000F186A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		004FA6761E02B26D000F186A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		004FA6791E02B26D000F186A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		004FA67B1E02B26D000F186A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -89,6 +131,8 @@
 		00DFCC951E0ADCFB0059C445 /* voix3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = voix3.mp3; sourceTree = "<group>"; };
 		00DFCC961E0ADCFB0059C445 /* voix4.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = voix4.mp3; sourceTree = "<group>"; };
 		00DFCC971E0ADCFB0059C445 /* voix5.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = voix5.mp3; sourceTree = "<group>"; };
+		00FC41791E28BCBD00627F81 /* BackgroundViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundViewController.swift; sourceTree = "<group>"; };
+		00FC417B1E28EAFB00627F81 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +160,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		002F23601E27DFF100C17827 /* Sound Techno */ = {
+			isa = PBXGroup;
+			children = (
+				002F23611E27E01300C17827 /* beat21.mp3 */,
+				002F23631E27E05500C17827 /* beat22.mp3 */,
+				002F23651E27E05D00C17827 /* beat23.mp3 */,
+				002F23671E27E06400C17827 /* beat24.mp3 */,
+				002F23691E27E06A00C17827 /* beat25.mp3 */,
+				002F236B1E27E14500C17827 /* effect21.mp3 */,
+				002F236D1E27E1C600C17827 /* effect22.mp3 */,
+				002F236F1E27E1DD00C17827 /* effect23.mp3 */,
+				002F23711E27E1E200C17827 /* effect24.mp3 */,
+				002F23731E27E1E700C17827 /* effect25.mp3 */,
+				002F23751E27E21700C17827 /* melo21.mp3 */,
+				002F23771E27E21F00C17827 /* melo22.mp3 */,
+				002F23791E27E22500C17827 /* melo23.mp3 */,
+				002F237B1E27E22B00C17827 /* melo24.mp3 */,
+				002F237D1E27E23100C17827 /* melo25.mp3 */,
+				002F237F1E27E23A00C17827 /* voix21.mp3 */,
+				002F23811E27E24200C17827 /* voix22.mp3 */,
+				002F23831E27E24900C17827 /* voix23.mp3 */,
+				002F23851E27E25200C17827 /* voix24.mp3 */,
+				002F23871E27E25700C17827 /* voix25.mp3 */,
+			);
+			name = "Sound Techno";
+			sourceTree = "<group>";
+		};
 		004FA6631E02B26D000F186A = {
 			isa = PBXGroup;
 			children = (
@@ -140,13 +211,16 @@
 			isa = PBXGroup;
 			children = (
 				004FA66F1E02B26D000F186A /* AppDelegate.swift */,
+				00FC41791E28BCBD00627F81 /* BackgroundViewController.swift */,
 				004FA6711E02B26D000F186A /* ViewController.swift */,
+				002F235E1E27C49D00C17827 /* HomeViewController.swift */,
 				00DFCC7D1E0A76110059C445 /* Bouton.swift */,
-				004FA6731E02B26D000F186A /* Main.storyboard */,
+				00FC417B1E28EAFB00627F81 /* Main.storyboard */,
 				004FA6761E02B26D000F186A /* Assets.xcassets */,
 				004FA6781E02B26D000F186A /* LaunchScreen.storyboard */,
 				004FA67B1E02B26D000F186A /* Info.plist */,
-				004FA6A71E02C22C000F186A /* Sound */,
+				002F23601E27DFF100C17827 /* Sound Techno */,
+				004FA6A71E02C22C000F186A /* Sound Hip-Hop */,
 			);
 			path = TapMusics;
 			sourceTree = "<group>";
@@ -169,7 +243,7 @@
 			path = TapMusicsUITests;
 			sourceTree = "<group>";
 		};
-		004FA6A71E02C22C000F186A /* Sound */ = {
+		004FA6A71E02C22C000F186A /* Sound Hip-Hop */ = {
 			isa = PBXGroup;
 			children = (
 				00DFCC931E0ADCFB0059C445 /* voix1.mp3 */,
@@ -193,7 +267,7 @@
 				008AA6BF1E03E79500AAB088 /* beat14.mp3 */,
 				008AA6C01E03E79500AAB088 /* beat15.mp3 */,
 			);
-			name = Sound;
+			name = "Sound Hip-Hop";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -308,25 +382,45 @@
 				00DFCC861E0AAFC30059C445 /* coeur3.mp3 in Resources */,
 				00DFCC881E0AAFC30059C445 /* coeur5.mp3 in Resources */,
 				00DFCC9C1E0ADCFB0059C445 /* voix5.mp3 in Resources */,
+				002F23841E27E24900C17827 /* voix23.mp3 in Resources */,
 				00DFCC8F1E0ADC860059C445 /* melo2.mp3 in Resources */,
 				00DFCC851E0AAFC30059C445 /* coeur2.mp3 in Resources */,
+				002F236A1E27E06A00C17827 /* beat25.mp3 in Resources */,
+				002F23681E27E06400C17827 /* beat24.mp3 in Resources */,
+				002F23861E27E25200C17827 /* voix24.mp3 in Resources */,
 				00DFCC8E1E0ADC860059C445 /* melo1.mp3 in Resources */,
 				00DFCC991E0ADCFB0059C445 /* voix2.mp3 in Resources */,
 				008AA6C51E03E79500AAB088 /* beat15.mp3 in Resources */,
+				00FC417C1E28EAFB00627F81 /* Main.storyboard in Resources */,
+				002F236C1E27E14500C17827 /* effect21.mp3 in Resources */,
 				00DFCC9B1E0ADCFB0059C445 /* voix4.mp3 in Resources */,
+				002F23781E27E21F00C17827 /* melo22.mp3 in Resources */,
 				008AA6C41E03E79500AAB088 /* beat14.mp3 in Resources */,
+				002F23701E27E1DD00C17827 /* effect23.mp3 in Resources */,
 				00DFCC921E0ADC860059C445 /* melo5.mp3 in Resources */,
 				008AA6C31E03E79500AAB088 /* beat13.mp3 in Resources */,
+				002F23801E27E23A00C17827 /* voix21.mp3 in Resources */,
+				002F23761E27E21700C17827 /* melo21.mp3 in Resources */,
 				00DFCC981E0ADCFB0059C445 /* voix1.mp3 in Resources */,
 				00DFCC901E0ADC860059C445 /* melo3.mp3 in Resources */,
 				008AA6C11E03E79500AAB088 /* beat11.mp3 in Resources */,
+				002F23641E27E05500C17827 /* beat22.mp3 in Resources */,
 				00DFCC871E0AAFC30059C445 /* coeur4.mp3 in Resources */,
+				002F237E1E27E23100C17827 /* melo25.mp3 in Resources */,
+				002F23821E27E24200C17827 /* voix22.mp3 in Resources */,
+				002F23741E27E1E700C17827 /* effect25.mp3 in Resources */,
+				002F23881E27E25700C17827 /* voix25.mp3 in Resources */,
+				002F23661E27E05D00C17827 /* beat23.mp3 in Resources */,
 				004FA67A1E02B26D000F186A /* LaunchScreen.storyboard in Resources */,
+				002F237C1E27E22B00C17827 /* melo24.mp3 in Resources */,
 				004FA6771E02B26D000F186A /* Assets.xcassets in Resources */,
 				00DFCC841E0AAFC30059C445 /* coeur1.mp3 in Resources */,
+				002F237A1E27E22500C17827 /* melo23.mp3 in Resources */,
 				00DFCC911E0ADC860059C445 /* melo4.mp3 in Resources */,
-				004FA6751E02B26D000F186A /* Main.storyboard in Resources */,
+				002F23721E27E1E200C17827 /* effect24.mp3 in Resources */,
+				002F23621E27E01300C17827 /* beat21.mp3 in Resources */,
 				008AA6C21E03E79500AAB088 /* beat12.mp3 in Resources */,
+				002F236E1E27E1C600C17827 /* effect22.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -353,7 +447,9 @@
 			files = (
 				00DFCC7E1E0A76110059C445 /* Bouton.swift in Sources */,
 				004FA6721E02B26D000F186A /* ViewController.swift in Sources */,
+				00FC417A1E28BCBD00627F81 /* BackgroundViewController.swift in Sources */,
 				004FA6701E02B26D000F186A /* AppDelegate.swift in Sources */,
+				002F235F1E27C49D00C17827 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -389,14 +485,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		004FA6731E02B26D000F186A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				004FA6741E02B26D000F186A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		004FA6781E02B26D000F186A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
