@@ -42,5 +42,7 @@
 	<string>Donnez moi accèes a vos coordonées GPS</string>
 	<key>NSCameraUsageDescription</key>
 	<string>Pour modifier le fond</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Modifier le fond d&apos;ecran</string>
 </dict>
 </plist>

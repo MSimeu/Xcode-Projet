@@ -88,12 +88,22 @@ class BackgroundViewController: UIViewController, UIImagePickerControllerDelegat
             print("Camera inaccessable")
         }
     }
+   
+    @IBAction func imgFromLib(_ sender: Any) {
+        if UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.photoLibrary) {
+            let imagePicker = UIImagePickerController() // Declare variable
+            imagePicker.sourceType = UIImagePickerControllerSourceType.photoLibrary // Since camera is available, affect value
+            imagePicker.delegate = self // Send info to the current controller
+            imagePicker.allowsEditing = false
+            self.present(imagePicker, animated: true, completion: nil) // We show image acquisition interface
+        }
+    }
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         
         if let pickedImage = info[UIImagePickerControllerOriginalImage] as? UIImage { // As? UIImage permet de vérifier le type renvoyé (image ou non)
             //Image taken temporarly as "UIImage"
-            ImageChoice?.contentMode = .scaleAspectFill
+            ImageChoice?.contentMode = .scaleAspectFit
             ImageChoice?.image = pickedImage
             
         }
