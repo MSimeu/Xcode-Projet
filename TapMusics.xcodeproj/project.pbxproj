@@ -39,6 +39,7 @@
 		008AA6C31E03E79500AAB088 /* beat13.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 008AA6BE1E03E79500AAB088 /* beat13.mp3 */; };
 		008AA6C41E03E79500AAB088 /* beat14.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 008AA6BF1E03E79500AAB088 /* beat14.mp3 */; };
 		008AA6C51E03E79500AAB088 /* beat15.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 008AA6C01E03E79500AAB088 /* beat15.mp3 */; };
+		00C6323E1E2F84FC00358C4A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00FC417B1E28EAFB00627F81 /* Main.storyboard */; };
 		00DFCC7E1E0A76110059C445 /* Bouton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DFCC7D1E0A76110059C445 /* Bouton.swift */; };
 		00DFCC841E0AAFC30059C445 /* coeur1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 00DFCC7F1E0AAFC30059C445 /* coeur1.mp3 */; };
 		00DFCC851E0AAFC30059C445 /* coeur2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 00DFCC801E0AAFC30059C445 /* coeur2.mp3 */; };
@@ -435,6 +436,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00C6323E1E2F84FC00358C4A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
