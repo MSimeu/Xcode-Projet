@@ -14,8 +14,10 @@ class HomeViewController: UIViewController ,UITableViewDelegate , UITableViewDat
     
     //API Météo
     
-    private let openWeatherMapBaseURL = "http://api.openweathermap.org/data/2.5/weather"
+    private let openWeatherMapBaseURL = "http://api.openweathermap.org/data/2.5/weather?q="
     private let openWeatherMapAPIKey = "a16d5a35a649b064ce60f14256407e15"
+    private var openWeatherURL:String = ""
+    
     
     
     @IBOutlet weak var tableView: UITableView!
@@ -44,13 +46,20 @@ class HomeViewController: UIViewController ,UITableViewDelegate , UITableViewDat
     @IBOutlet weak var latitude: UILabel!
     var lat : String = ""
     var long : String = ""
+    var city: String = ""
     //VILLE
     @IBOutlet weak var cityLabel: UILabel!
     var addresse: String = ""
     //TIME
     @IBOutlet weak var timeLabel: UILabel!
     
-    //
+    //meteo
+    var jsonData: AnyObject?
+    var cityTemp: String = ""
+    var degree = "\u{00B0}"
+    
+    @IBOutlet weak var cityTempLabel: UILabel!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -124,6 +133,7 @@ class HomeViewController: UIViewController ,UITableViewDelegate , UITableViewDat
             latitude.text = String(lat.characters.prefix(4))
             longitude.text = String(long.characters.prefix(4))
             
+            
             let geocoder = CLGeocoder()
             geocoder.reverseGeocodeLocation(currentLocation, completionHandler: { (placemarks, error) -> Void in
                 
@@ -137,7 +147,7 @@ class HomeViewController: UIViewController ,UITableViewDelegate , UITableViewDat
                     if let city = placeMark.addressDictionary!["City"] as? NSString {
                         //print(city, terminator: "")
                         self.addresse = city as String
-                        
+                        self.city = city as String
                     }
                     
                     // Country
@@ -155,6 +165,21 @@ class HomeViewController: UIViewController ,UITableViewDelegate , UITableViewDat
 
                 
             })
+            
+            //Mise a jour météo
+            if ( self.city != "" && cityTempLabel.isHidden){
+                openWeatherURL =  openWeatherMapBaseURL
+                openWeatherURL += self.city
+                openWeatherURL += ",fr&appid="
+                openWeatherURL += openWeatherMapAPIKey
+                getWeatherData(urlString: openWeatherURL)
+                
+            }
+
+            
+            
+            
+
         }
     }
     
@@ -186,6 +211,52 @@ class HomeViewController: UIViewController ,UITableViewDelegate , UITableViewDat
         
     }
     
+    func getWeatherData(urlString: String) {
+        
+        let url = NSURL(string: urlString)
+        let task = URLSession.shared.dataTask(with: (url)! as URL as URL, completionHandler: { (data, response, error) -> Void in
+            do{
+                let str = try JSONSerialization.jsonObject(with: data!, options: JSONSerialization.ReadingOptions.allowFragments)
+                self.updateMeteo(meteoData: data! as NSData)
+                print(str)
+            }
+            catch {
+                print("json error: \(error)")
+                self.openWeatherURL = ""
+            }
+        })
+        task.resume()
+        
+        
+    }
+    
+    func updateMeteo( meteoData :NSData){
+        do {
+            //var degree = "\u{00B0}"
+            
+            self.jsonData = try JSONSerialization.jsonObject(with: meteoData as Data, options: []) as! NSDictionary
+            
+            if let main = jsonData!["main"] as? NSDictionary {
+                if let temp = main["temp"] as? Double {
+                    cityTemp = String(format: "%.2f", temp)
+                    cityTempLabel.isHidden = false
+                    //Conv
+                    let tempconv = temp - 273.15
+                    cityTempLabel.text = String(format: "%.2f" ,tempconv)
+                    //cityTempLabel.text += degree
+                }
+            }
+            
+        } catch {
+            //error handle here
+            
+        }
+        
+        
+        
+
+    
+    }
    
     @IBAction func unwindToHome(segue: UIStoryboardSegue) {
         

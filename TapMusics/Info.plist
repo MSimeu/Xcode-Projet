@@ -8,41 +8,48 @@
 	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
+	<key>UIMainStoryboardFile</key>
+	<string>Main</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string></string>
-	<key>CFBundleVersion</key>
-	<string>1</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>CFBundleVersion</key>
+	<string>1</string>
 	<key>NSBluetoothPeripheralUsageDescription</key>
 	<string></string>
-	<key>UIMainStoryboardFile</key>
-	<string>Main</string>
-	<key>UIRequiredDeviceCapabilities</key>
-	<array>
-		<string>armv7</string>
-	</array>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
 	</array>
-	<key>CFBundlePackageType</key>
-	<string>APPL</string>
-	<key>NSLocationUsageDescription</key>
-	<string>Nous aimerions vous localisez</string>
-	<key>CFBundleDevelopmentRegion</key>
-	<string>en</string>
 	<key>CFBundleName</key>
 	<string>$(PRODUCT_NAME)</string>
 	<key>NSLocationAlwaysUsageDescription</key>
 	<string>Donnez moi accèes a vos coordonées GPS</string>
-	<key>NSCameraUsageDescription</key>
-	<string>Pour modifier le fond</string>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>Modifier le fond d&apos;ecran</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>NSCameraUsageDescription</key>
+	<string>Pour modifier le fond</string>
+	<key>NSLocationUsageDescription</key>
+	<string>Nous aimerions vous localisez</string>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>en</string>
+	<key>UIRequiredDeviceCapabilities</key>
+	<array>
+		<string>armv7</string>
+	</array>
+	<key>LSApplicationCategoryType</key>
+	<string></string>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
 </dict>
 </plist>
