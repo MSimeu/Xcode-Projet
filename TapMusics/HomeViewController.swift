@@ -49,37 +49,50 @@ class HomeViewController: UIViewController ,UITableViewDelegate , UITableViewDat
     let currentlocation = CLLocation()
     
     //Coordonnées GPS du device
+    //label qui affiche lat et long
     @IBOutlet weak var longitude: UILabel!
     @IBOutlet weak var latitude: UILabel!
+    
+    //String pour manipulé la ville et les coordonées
     var lat : String = ""
     var long : String = ""
     var city: String = ""
+    
     //VILLE
+    // Label pour la ville
     @IBOutlet weak var cityLabel: UILabel!
     var addresse: String = ""
     //TIME
+    //Label de l'horloge
     @IBOutlet weak var timeLabel: UILabel!
     
-    //meteo
+    //Meteo
+    // Dictionnaire pour recupere les données fournis par l'api
     var jsonData: AnyObject?
+    // temperature
     var cityTemp: String = ""
-    var degree = "\u{00B0}"
-    
+    //label qui affiche la temperature
     @IBOutlet weak var cityTempLabel: UILabel!
     
 
     override func viewDidLoad() {
+        //initilisation de la vue
         super.viewDidLoad()
+        //initilisation de la table View
         tableView.dataSource = self
         tableView.delegate = self
+        
+        // Couleur appliqué au fond d'ecran
         background.backgroundColor = color
+        
+        //le label du temperature et caché tant que la temperature n'ets pas recu pas l'api
         cityTempLabel.isHidden = true
         
+        // programmation du timer
         _ = Timer.scheduledTimer(timeInterval: 0.4, target: self, selector: #selector(self.update), userInfo: nil, repeats: true);
 
         
-        //Location 
-
+        //Location Manager  initialisation
         locationManager.delegate = self
         locationManager.requestAlwaysAuthorization()
         locationManager.startUpdatingLocation()
@@ -213,7 +226,7 @@ class HomeViewController: UIViewController ,UITableViewDelegate , UITableViewDat
                 DestViewController.sound4 = soundTechno4
                 
             }
-            if ((sender as? String) == "Trance"){}
+            if ((sender as? String) == "Dance"){}
             if ((sender as? String) == "Indus"){}
             
             
