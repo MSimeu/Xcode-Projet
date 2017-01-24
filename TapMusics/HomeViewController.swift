@@ -242,10 +242,14 @@ class HomeViewController: UIViewController ,UITableViewDelegate , UITableViewDat
                     cityTempLabel.isHidden = false
                     //Conv
                     let tempconv = temp - 273.15
-                    cityTempLabel.text = String(format: "%.2f" ,tempconv)
+                    cityTempLabel.text = String(format: "%.1f" ,tempconv)
                     //cityTempLabel.text += degree
                 }
             }
+            
+            //if let weatherImage = jsonData!["weather"][0]["icon"].stringValue as? String {
+            //   print(weatherImage)
+            //}
             
         } catch {
             //error handle here
