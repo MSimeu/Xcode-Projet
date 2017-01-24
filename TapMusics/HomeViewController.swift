@@ -13,17 +13,22 @@ class HomeViewController: UIViewController ,UITableViewDelegate , UITableViewDat
     
     
     //API Météo
-    
-    private let openWeatherMapBaseURL = "http://api.openweathermap.org/data/2.5/weather?q="
+    //debut de  l'url de l'api openweather map
+    private let openWeatherMapBaseURL = "http://api.openweathermap.org/data/2.5/weather?lat="
+    //Code de l'api
     private let openWeatherMapAPIKey = "a16d5a35a649b064ce60f14256407e15"
+    //string vide qui contiendra l'adresse de connexction a l'api
     private var openWeatherURL:String = ""
     
     
-    
+    //Table view qui affiche les style de musique
     @IBOutlet weak var tableView: UITableView!
-    var soundStyle = ["Techno","Hip-Hop","Trance","Indus"]
-    //BG
+    
+    //Tableau qui contient  les style de musique
+    var soundStyle = ["Techno","Hip-Hop","Dance","Indus"]
+    //BG image view
     @IBOutlet weak var background: UIImageView!
+    //Couleur du l'image view de fond
     var color : UIColor = UIColor(red: 44.0/255.0, green: 62.0/255.0, blue: 80.0/255.0, alpha: 1.0)
     
     
@@ -38,10 +43,12 @@ class HomeViewController: UIViewController ,UITableViewDelegate , UITableViewDat
 
     
     //LOCATION
+    //Location manager
     let locationManager = CLLocationManager()
+    //object permetant de recupere la localisation
     let currentlocation = CLLocation()
     
-    //Coor
+    //Coordonnées GPS du device
     @IBOutlet weak var longitude: UILabel!
     @IBOutlet weak var latitude: UILabel!
     var lat : String = ""
@@ -66,6 +73,7 @@ class HomeViewController: UIViewController ,UITableViewDelegate , UITableViewDat
         tableView.dataSource = self
         tableView.delegate = self
         background.backgroundColor = color
+        cityTempLabel.isHidden = true
         
         _ = Timer.scheduledTimer(timeInterval: 0.4, target: self, selector: #selector(self.update), userInfo: nil, repeats: true);
 
@@ -166,12 +174,15 @@ class HomeViewController: UIViewController ,UITableViewDelegate , UITableViewDat
                 
             })
             
-            //Mise a jour météo
+            //Mise a jour URl météo
             if ( self.city != "" && cityTempLabel.isHidden){
                 openWeatherURL =  openWeatherMapBaseURL
-                openWeatherURL += self.city
-                openWeatherURL += ",fr&appid="
+                openWeatherURL += lat
+                openWeatherURL += "&lon="
+                openWeatherURL += long
+                openWeatherURL += "&appid="
                 openWeatherURL += openWeatherMapAPIKey
+                print (openWeatherURL)
                 getWeatherData(urlString: openWeatherURL)
                 
             }
@@ -242,10 +253,14 @@ class HomeViewController: UIViewController ,UITableViewDelegate , UITableViewDat
                     cityTempLabel.isHidden = false
                     //Conv
                     let tempconv = temp - 273.15
-                    cityTempLabel.text = String(format: "%.1f" ,tempconv)
+                    let tempString : String = String(format: "%.1f" ,tempconv)
+                    cityTempLabel.text = tempString + "\u{00B0}"
                     //cityTempLabel.text += degree
                 }
             }
+            
+            
+            
             
             //if let weatherImage = jsonData!["weather"][0]["icon"].stringValue as? String {
             //   print(weatherImage)
