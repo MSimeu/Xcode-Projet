@@ -45,6 +45,12 @@ class HomeViewController: UIViewController ,UITableViewDelegate , UITableViewDat
     var soundDance2: [String] = ["effect31","effect32","effect33","effect34","effect35"]
     var soundDance3: [String] = ["melo31","melo32","melo33","melo34","melo35"]
     var soundDance4: [String] = ["voix31","voix32","voix33","voix34","voix35"]
+    
+    //Son hardcore
+    var soundHardcore1: [String] = ["beat41","beat42","beat43","beat44","beat45"]
+    var soundHardcore2: [String] = ["effect41","effect42","effect43","effect44","effect45"]
+    var soundHardcore3: [String] = ["melo41","melo42","melo43","melo44","melo45"]
+    var soundHardcore4: [String] = ["voix41","voix42","voix43","voix44","voix45"]
 
     
     //LOCATION
@@ -365,7 +371,13 @@ class HomeViewController: UIViewController ,UITableViewDelegate , UITableViewDat
                 DestViewController.sound3 = soundDance3
                 DestViewController.sound4 = soundDance4
             }
-            if ((sender as? String) == "Indus"){}
+            if ((sender as? String) == "Hardcore"){
+                //transfere de son
+                DestViewController.sound1 = soundHardcore1
+                DestViewController.sound2 = soundHardcore2
+                DestViewController.sound3 = soundHardcore3
+                DestViewController.sound4 = soundHardcore4
+            }
             
             
             
