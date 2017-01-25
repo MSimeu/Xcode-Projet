@@ -25,7 +25,7 @@ class HomeViewController: UIViewController ,UITableViewDelegate , UITableViewDat
     @IBOutlet weak var tableView: UITableView!
     
     //Tableau qui contient  les style de musique
-    var soundStyle = ["Techno","Hip-Hop","Dance","Indus"]
+    var soundStyle = ["Techno","Hip-Hop","Dance","HardCore"]
     //BG image view
     @IBOutlet weak var background: UIImageView!
     //Couleur du l'image view de fond
@@ -365,7 +365,7 @@ class HomeViewController: UIViewController ,UITableViewDelegate , UITableViewDat
                 DestViewController.sound3 = soundDance3
                 DestViewController.sound4 = soundDance4
             }
-            if ((sender as? String) == "Indus"){}
+            if ((sender as? String) == "HardCore"){}
             
             
             
