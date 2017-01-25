@@ -52,6 +52,7 @@ class BackgroundViewController: UIViewController, UIImagePickerControllerDelegat
         choice1outlet.alpha = 1.0
         choice2outlet.alpha = 0.5
         choice3outlet.alpha = 0.5
+        
         let color = UIColor(red: 44.0/255.0, green: 62.0/255.0, blue: 80.0/255.0, alpha: 1.0)
         ImageChoice?.backgroundColor = color
     }
@@ -60,6 +61,7 @@ class BackgroundViewController: UIViewController, UIImagePickerControllerDelegat
         choice1outlet.alpha = 0.5
         choice2outlet.alpha = 1.0
         choice3outlet.alpha = 0.5
+        
         let color = UIColor(red: 192.0/255.0, green: 57.0/255.0, blue: 43.0/255.0, alpha: 1.0)
         ImageChoice?.backgroundColor = color
         //rgba(192, 57, 43,1.0)
@@ -69,6 +71,7 @@ class BackgroundViewController: UIViewController, UIImagePickerControllerDelegat
         choice1outlet.alpha = 0.5
         choice2outlet.alpha = 0.5
         choice3outlet.alpha = 1.0
+        
         let color = UIColor(red: 241.0/255.0, green: 196.0/255.0, blue: 15.0/255.0, alpha: 1.0)
         ImageChoice?.backgroundColor = color
     }

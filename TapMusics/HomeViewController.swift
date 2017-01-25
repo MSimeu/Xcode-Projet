@@ -141,7 +141,7 @@ class HomeViewController: UIViewController ,UITableViewDelegate , UITableViewDat
         let cell = tableView.cellForRow(at: indexPath)
         // actionement du segue lors du clic sur la cellule
         performSegue(withIdentifier: "oneSegue", sender: cell?.textLabel?.text)
-        //Deslectioner la cellule une fois que le segue est effectuer
+        
         tableView.deselectRow(at: indexPath, animated: true)
     }
     
