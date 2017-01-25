@@ -1,7 +1,11 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -16,12 +20,52 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TapMusic" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Wl-J9-d2A">
+                                <rect key="frame" x="0.0" y="132" width="375" height="62"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="62" id="HVi-IF-fKl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="43"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Menes SIMEU &amp; Léopold CHALAMON" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="90F-Hc-AuV">
+                                <rect key="frame" x="0.0" y="605" width="375" height="62"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="62" id="XlT-Dt-cGp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="GEq-Qt-1DJ">
+                                <rect key="frame" x="0.0" y="182" width="375" height="303"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="GEq-Qt-1DJ" secondAttribute="trailing" id="69K-PK-Rd3"/>
+                            <constraint firstItem="GEq-Qt-1DJ" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="6cn-lA-LHh"/>
+                            <constraint firstItem="90F-Hc-AuV" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="Aso-8i-nPB"/>
+                            <constraint firstItem="GEq-Qt-1DJ" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="162" id="Bok-sp-rGt"/>
+                            <constraint firstItem="GEq-Qt-1DJ" firstAttribute="centerX" secondItem="0Wl-J9-d2A" secondAttribute="centerX" id="E9C-8O-LLt"/>
+                            <constraint firstAttribute="trailing" secondItem="90F-Hc-AuV" secondAttribute="trailing" id="F4k-oA-L3Q"/>
+                            <constraint firstItem="0Wl-J9-d2A" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="Kcc-Aq-aDa"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="90F-Hc-AuV" secondAttribute="bottom" id="M5f-vG-rfu"/>
+                            <constraint firstItem="GEq-Qt-1DJ" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="TBl-LL-6ey"/>
+                            <constraint firstAttribute="trailing" secondItem="0Wl-J9-d2A" secondAttribute="trailing" id="Wgn-cZ-GaV"/>
+                            <constraint firstItem="0Wl-J9-d2A" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="112" id="sYq-rm-s2M"/>
+                            <constraint firstItem="90F-Hc-AuV" firstAttribute="centerX" secondItem="0Wl-J9-d2A" secondAttribute="centerX" id="vbM-5y-gg2"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="logo" width="83" height="83"/>
+    </resources>
 </document>
