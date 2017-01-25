@@ -40,6 +40,11 @@ class HomeViewController: UIViewController ,UITableViewDelegate , UITableViewDat
     var soundTechno3: [String] = ["melo21","melo22","melo23","melo24","melo25"]
     var soundTechno4: [String] = ["voix21","voix22","voix23","voix24","voix25"]
     
+    //Son dance
+    var soundDance1: [String] = ["beat31","beat32","beat33","beat34","beat35"]
+    var soundDance2: [String] = ["effect31","effect32","effect33","effect34","effect35"]
+    var soundDance3: [String] = ["melo31","melo32","melo33","melo34","melo35"]
+    var soundDance4: [String] = ["voix31","voix32","voix33","voix34","voix35"]
 
     
     //LOCATION
@@ -93,8 +98,11 @@ class HomeViewController: UIViewController ,UITableViewDelegate , UITableViewDat
 
         
         //Location Manager  initialisation
+        // assigning the delegate to location manager
         locationManager.delegate = self
+        // demande l'autorisation en fonction du info.plist
         locationManager.requestAlwaysAuthorization()
+        //debut de la localisation
         locationManager.startUpdatingLocation()
         
         // Do any additional setup after loading the view.
@@ -105,28 +113,33 @@ class HomeViewController: UIViewController ,UITableViewDelegate , UITableViewDat
         // Dispose of any resources that can be recreated.
     }
     
-    
+    // mise a jour chauqe seconde du timer
     func update() {
+        //le texte du time label est le curent time du telephone
         timeLabel.text = currentTime()
+        //mise jour de la couleur du fond
         background.backgroundColor = self.color
         
     }
-    
+    //Fonction qui renvoie la taille de la table view
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.soundStyle.count
     }
     
+    //function qui ajoute à chaque cell le texte du tableau des son
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        //création de la cellule
         let cell = UITableViewCell()
-        
+        // modification du texte de la cellule
         cell.textLabel?.text = self.soundStyle[indexPath.row]
         
         return cell;
     }
     
+    //action a chaque clic que la cellule
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let cell = tableView.cellForRow(at: indexPath)
-        
+        // actionement du segue lors du clic sur la cellule
         performSegue(withIdentifier: "oneSegue", sender: cell?.textLabel?.text)
     }
     
@@ -226,7 +239,14 @@ class HomeViewController: UIViewController ,UITableViewDelegate , UITableViewDat
                 DestViewController.sound4 = soundTechno4
                 
             }
-            if ((sender as? String) == "Dance"){}
+            if ((sender as? String) == "Dance"){
+                
+                //transfere de son
+                DestViewController.sound1 = soundDance1
+                DestViewController.sound2 = soundDance2
+                DestViewController.sound3 = soundDance3
+                DestViewController.sound4 = soundDance4
+            }
             if ((sender as? String) == "Indus"){}
             
             
