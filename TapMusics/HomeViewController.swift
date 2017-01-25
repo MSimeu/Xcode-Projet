@@ -28,6 +28,7 @@ class HomeViewController: UIViewController ,UITableViewDelegate , UITableViewDat
     var soundStyle = ["Techno","Hip-Hop","Dance","HardCore"]
     //BG image view
     @IBOutlet weak var background: UIImageView!
+    @IBOutlet weak var bg2: UIImageView!
     //Couleur du l'image view de fond
     var color : UIColor = UIColor(red: 44.0/255.0, green: 62.0/255.0, blue: 80.0/255.0, alpha: 1.0)
     
@@ -95,6 +96,7 @@ class HomeViewController: UIViewController ,UITableViewDelegate , UITableViewDat
         
         // Couleur appliqué au fond d'ecran
         background.backgroundColor = color
+        bg2.backgroundColor = color
         
         //le label du temperature et caché tant que la temperature n'ets pas recu pas l'api
         cityTempLabel.isHidden = true
@@ -373,7 +375,7 @@ class HomeViewController: UIViewController ,UITableViewDelegate , UITableViewDat
                 DestViewController.sound4 = soundDance4
             }
 
-            if ((sender as? String) == "Hardcore"){
+            if ((sender as? String) == "HardCore"){
                 //transfere de son
                 DestViewController.sound1 = soundHardcore1
                 DestViewController.sound2 = soundHardcore2

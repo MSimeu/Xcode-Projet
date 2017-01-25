@@ -24,8 +24,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eHj-sJ-8Wt">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="idk-SZ-JQR">
                                 <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.24364612999999999" green="0.31312194469999999" blue="0.38031241300000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eHj-sJ-8Wt">
+                                <rect key="frame" x="0.0" y="64" width="320" height="175"/>
                                 <color key="backgroundColor" red="0.24364612996578217" green="0.31312194466590881" blue="0.38031241297721863" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="bqT-lw-cad">
@@ -140,6 +145,7 @@
                     <navigationItem key="navigationItem" title="TapMusic" id="fWq-Ma-KPC"/>
                     <connections>
                         <outlet property="background" destination="eHj-sJ-8Wt" id="yTW-ug-mFC"/>
+                        <outlet property="bg2" destination="idk-SZ-JQR" id="Whj-4Z-gSM"/>
                         <outlet property="cityLabel" destination="6kN-nr-leO" id="HPS-Wa-FV0"/>
                         <outlet property="cityTempLabel" destination="dVa-qS-fvu" id="ccg-oi-cmS"/>
                         <outlet property="latitude" destination="m2A-nZ-bpy" id="pAQ-RJ-yIu"/>
