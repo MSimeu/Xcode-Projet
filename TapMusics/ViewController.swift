@@ -12,6 +12,7 @@ import AVFoundation
 
 class ViewController: UIViewController , AVAudioPlayerDelegate {
     //controller
+    //Création et initialisation des boutons
     
     //Ligne 1
     var bouton11: Bouton? = nil
@@ -42,7 +43,7 @@ class ViewController: UIViewController , AVAudioPlayerDelegate {
     var bouton45: Bouton? = nil
 
 
-    
+    //Outlet pour chaque bouton
     //beat bouton
     @IBOutlet weak var btnBeat1: UIButton!
     @IBOutlet weak var btnBeat2: UIButton!
@@ -71,7 +72,8 @@ class ViewController: UIViewController , AVAudioPlayerDelegate {
     @IBOutlet weak var btnVoix4: UIButton!
     @IBOutlet weak var btnVoix5: UIButton!
     
-    
+    // Booléen pour savoir si je bouton est active
+
     //Booléen
     var btn11Bool : Bool = false
     var btn12Bool : Bool = false
@@ -97,12 +99,11 @@ class ViewController: UIViewController , AVAudioPlayerDelegate {
     var btn44Bool : Bool = false
     var btn45Bool : Bool = false
     
-    //titre
-    
+    //titre de la View
     @IBOutlet weak var titleLabel: UILabel!
     var titre : String = ""
 
-    
+    //Tableau de son de base ce sont les son Hip-Hop
     //Array
     var player1: [AVAudioPlayer:UIButton] = [:]
     var sound1: [String] = ["beat11","beat12","beat13","beat14","beat15"]
@@ -114,12 +115,13 @@ class ViewController: UIViewController , AVAudioPlayerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
+        //initilisation des boutons
         boutoninit()
         
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        //intialisaion de la pages
         pageinit()
     }
 
@@ -128,6 +130,7 @@ class ViewController: UIViewController , AVAudioPlayerDelegate {
         // Dispose of any resources that can be recreated.
     }
     func pageinit(){
+        // le titre initilisation
         self.titre = ""
         
     }
@@ -140,7 +143,7 @@ class ViewController: UIViewController , AVAudioPlayerDelegate {
 
         
         //initialisation des boutons
-        
+        // avec la Classe Bouton et donc avec comme pametre le boutton associer et le son
         //col1
         if (bouton11==nil){
             bouton11 = Bouton(btnBeat: self.btnBeat1, sound: self.sound1[0])
@@ -214,7 +217,7 @@ class ViewController: UIViewController , AVAudioPlayerDelegate {
     
     }
     
-    
+    // lacement de la fonction play sound lors de l'action sur le Bouton
     @IBAction func btnBeat1(_ sender: Any) {
         
         
@@ -495,6 +498,8 @@ class ViewController: UIViewController , AVAudioPlayerDelegate {
     
 
     @IBAction func playerStop(_ sender: Any) {
+        
+        //Fonction qui permet de stoper tout les boutons
         //col1
         bouton11?.stopSound()
         bouton12?.stopSound()

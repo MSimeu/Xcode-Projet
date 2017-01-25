@@ -141,6 +141,8 @@ class HomeViewController: UIViewController ,UITableViewDelegate , UITableViewDat
         let cell = tableView.cellForRow(at: indexPath)
         // actionement du segue lors du clic sur la cellule
         performSegue(withIdentifier: "oneSegue", sender: cell?.textLabel?.text)
+        //Deslectioner la cellule une fois que le segue est effectuer
+        tableView.deselectRow(at: indexPath, animated: true)
     }
     
 
@@ -314,13 +316,18 @@ class HomeViewController: UIViewController ,UITableViewDelegate , UITableViewDat
     @IBAction func unwindToHome(segue: UIStoryboardSegue) {
         
         //print (segue.source)
+        // Recuperation du sourcce View Controller
         let SrcViewController : BackgroundViewController = segue.source as! BackgroundViewController
+        // Si une image est envoyer par le view controller
         if (SrcViewController.ImageChoice?.image != nil ){
+            //Modification du fon d'ecran en fonction de l'image envoiyer viea le  Segue
             self.background.image = SrcViewController.ImageChoice?.image
         
         }else{
+            // si erreur 
+            // image de fond null si  erreur
             self.background.image = nil
-        
+            // Recuperation de la couleur du view concoleur
             self.color = (SrcViewController.ImageChoice?.backgroundColor)!
             
         }
@@ -330,10 +337,14 @@ class HomeViewController: UIViewController ,UITableViewDelegate , UITableViewDat
     
     //Fonction qui ce lance avant de changer de View controller
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
+        // Verification du Vienw controller
         if ( segue.identifier == "oneSegue" && sender != nil){
+            
+            //création du view controller destination
             let DestViewController : ViewController = segue.destination as! ViewController
+            //Modification du titre du view controller destination
             DestViewController.titre = (sender as? String)!
+             //Moification des son en fonction du sender cad du choix dans la table View
             if ((sender as? String) == "Hip-hop"){
                 
             }
