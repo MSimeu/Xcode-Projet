@@ -191,29 +191,30 @@ class HomeViewController: UIViewController ,UITableViewDelegate , UITableViewDat
                     var placeMark: CLPlacemark!
                     //récupération des détail de la location sous forme de dictionnaire
                     placeMark = placemarks?[0]
-                    
-                    // Address dictionary
-                    //print(placeMark.addressDictionary as Any, terminator: "")
                 
-                    // Recuperation de la ville dans le dictionaire
-                    if let city = placeMark.addressDictionary!["City"] as? NSString {
+                    if (placeMark != nil){
+                        // Address dictionary
+                        //print(placeMark.addressDictionary as Any, terminator: "")
                         
-                        //print(city, terminator: "")
-                        //ajout de la ville dans les varibles adresse et city
-                        self.addresse = city as String
-                        self.city = city as String
-                    }
+                        // Recuperation de la ville dans le dictionaire
+                        if let city = placeMark.addressDictionary!["City"] as? NSString {
+                            
+                            //print(city, terminator: "")
+                            //ajout de la ville dans les varibles adresse et city
+                            self.addresse = city as String
+                            self.city = city as String
+                        }
                     
-                    // Recuperation du pays dans le dictionaire
-                    if let country = placeMark.addressDictionary!["Country"] as? NSString {
-                        //print(country, terminator: "")
-                        //ajout dans la varibles adresse le pays
-                        self.addresse += ", "
-                        self.addresse += country as String
+                        // Recuperation du pays dans le dictionaire
+                        if let country = placeMark.addressDictionary!["Country"] as?    NSString {
+                            //print(country, terminator: "")
+                            //ajout dans la varibles adresse le pays
+                            self.addresse += ", "
+                            self.addresse += country as String
                     }
                     // mise à jour de l'adresse label
                     self.cityLabel.text = self.addresse
-                    
+                }
                     //print(self.addresse)
                 if error != nil {
                     // en cas d'erreur on arrete la localisation
