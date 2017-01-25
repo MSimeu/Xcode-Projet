@@ -147,81 +147,188 @@ class HomeViewController: UIViewController ,UITableViewDelegate , UITableViewDat
     
     
     func currentTime() -> String {
+        //création du temps ou bon format
+        //récuperation de la date
         let date = Date()
         let calendar = Calendar.current
+        // c'éation de heure minutes sec
         let hour = calendar.component(.hour, from: date)
         let minutes = calendar.component(.minute, from: date)
         let sec = calendar.component(.second, from: date)
+        // revois la date au bon format
         return "\(hour):\(minutes):\(sec)"
     }
     
+    
+    //fonction qui ce met a jour à chaque modification de la localisation
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        // la fonction revois un tableu de position recupération de la prémiere
         var currentLocation = locations[0]
+        // si le device nous autorise a utilisé ses coordonées
         if( CLLocationManager.authorizationStatus() == CLAuthorizationStatus.authorizedWhenInUse ||
             CLLocationManager.authorizationStatus() == CLAuthorizationStatus.authorizedAlways){
             
+            //récuperation de la position du locatino manager
             currentLocation = locationManager.location!
+            
+            // récupération des coordonées GPS
             lat = currentLocation.coordinate.latitude.description
             long = currentLocation.coordinate.longitude.description
             
+            //découpages des coordonées et ajout au label de latitudes et de longitudes
             latitude.text = String(lat.characters.prefix(4))
             longitude.text = String(long.characters.prefix(4))
             
-            
+            //Création du géocoder qui va nous permetre de récuperé la ville et le pays
             let geocoder = CLGeocoder()
+            //fonctiond de GeocodeLocation inverser
             geocoder.reverseGeocodeLocation(currentLocation, completionHandler: { (placemarks, error) -> Void in
+                
                 
                     // Place details
                     var placeMark: CLPlacemark!
+                    //récupération des détail de la location sous forme de dictionnaire
                     placeMark = placemarks?[0]
                     
                     // Address dictionary
                     //print(placeMark.addressDictionary as Any, terminator: "")
-                    
+                
+                    // Recuperation de la ville dans le dictionaire
                     if let city = placeMark.addressDictionary!["City"] as? NSString {
+                        
                         //print(city, terminator: "")
+                        //ajout de la ville dans les varibles adresse et city
                         self.addresse = city as String
                         self.city = city as String
                     }
                     
-                    // Country
+                    // Recuperation du pays dans le dictionaire
                     if let country = placeMark.addressDictionary!["Country"] as? NSString {
                         //print(country, terminator: "")
+                        //ajout dans la varibles adresse le pays
                         self.addresse += ", "
                         self.addresse += country as String
                     }
+                    // mise à jour de l'adresse label
                     self.cityLabel.text = self.addresse
                     
                     //print(self.addresse)
                 if error != nil {
+                    // en cas d'erreur on arrete la localisation
                     self.locationManager.stopUpdatingLocation()
                 }
 
                 
             })
             
-            //Mise a jour URl météo
+            //Mise a jour URl météo pour la connexion a l'api
             if ( self.city != "" && cityTempLabel.isHidden){
+                // début de l'URL
                 openWeatherURL =  openWeatherMapBaseURL
+                // ajout de la latitude
                 openWeatherURL += lat
+                // ajout de la logitude
                 openWeatherURL += "&lon="
                 openWeatherURL += long
+                //ajout de API ID
                 openWeatherURL += "&appid="
                 openWeatherURL += openWeatherMapAPIKey
-                print (openWeatherURL)
+                //print (openWeatherURL)
+                
+                //Recuperation des données avec l'URL correct
                 getWeatherData(urlString: openWeatherURL)
                 
             }
 
-            
-            
-            
-
         }
     }
+
+    //Fonction qui ce connect a l'api
+    func getWeatherData(urlString: String) {
+        //Création de l'URL
+        let url = NSURL(string: urlString)
+        //créction de la requete a l'api
+        let task = URLSession.shared.dataTask(with: (url)! as URL as URL, completionHandler: { (data, response, error) -> Void in
+            do{
+                // recupération de JSON Réponse
+                let str = try JSONSerialization.jsonObject(with: data!, options: JSONSerialization.ReadingOptions.allowFragments)
+                
+                // envoi de la réponse de l'api a la fonction qui vas traité la reponse en JSON
+                self.updateMeteo(meteoData: data! as NSData)
+                
+                print(str)
+            }
+            catch {
+                // en cas d'erreur
+                print("json error: \(error)")
+                // on vide l'URL
+                self.openWeatherURL = ""
+            }
+        })
+        task.resume()
+        
+        
+    }
     
+    func updateMeteo( meteoData :NSData){
+        do {
+            
+            // récuperation des données JSON
+            self.jsonData = try JSONSerialization.jsonObject(with: meteoData as Data, options: []) as! NSDictionary
+            
+            //Récuperation dans le tableau JSON du "main"
+            if let main = jsonData!["main"] as? NSDictionary {
+                // recupération de la données "temp"
+                if let temp = main["temp"] as? Double {
+                    // mise a jour de la valur de la température
+                    cityTemp = String(format: "%.2f", temp)
+                    //affichage de le température
+                    cityTempLabel.isHidden = false
+                    //Convertion de kelvin a celsius
+                    let tempconv = temp - 273.15
+                    //Modification du format de la température
+                    let tempString : String = String(format: "%.1f" ,tempconv)
+                    // ajout de la temperature au label
+                    cityTempLabel.text = tempString + "\u{00B0}"
+                    
+                }
+            }
+            
+            //if let weatherImage = jsonData!["weather"][0]["icon"].stringValue as? String {
+            //   print(weatherImage)
+            //}
+            
+        } catch {
+            //error handle here
+            
+        }
+        
+        
+        
+
     
+    }
+   
     
+    // Focntion qui est appler avec le segue unwindToHome
+    @IBAction func unwindToHome(segue: UIStoryboardSegue) {
+        
+        //print (segue.source)
+        let SrcViewController : BackgroundViewController = segue.source as! BackgroundViewController
+        if (SrcViewController.ImageChoice?.image != nil ){
+            self.background.image = SrcViewController.ImageChoice?.image
+        
+        }else{
+            self.background.image = nil
+        
+            self.color = (SrcViewController.ImageChoice?.backgroundColor)!
+            
+        }
+        // print("Menes Menes Menes")
+    }
+
+    
+    //Fonction qui ce lance avant de changer de View controller
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         if ( segue.identifier == "oneSegue" && sender != nil){
@@ -254,79 +361,7 @@ class HomeViewController: UIViewController ,UITableViewDelegate , UITableViewDat
         }
         
     }
-    
-    func getWeatherData(urlString: String) {
-        
-        let url = NSURL(string: urlString)
-        let task = URLSession.shared.dataTask(with: (url)! as URL as URL, completionHandler: { (data, response, error) -> Void in
-            do{
-                let str = try JSONSerialization.jsonObject(with: data!, options: JSONSerialization.ReadingOptions.allowFragments)
-                self.updateMeteo(meteoData: data! as NSData)
-                print(str)
-            }
-            catch {
-                print("json error: \(error)")
-                self.openWeatherURL = ""
-            }
-        })
-        task.resume()
-        
-        
-    }
-    
-    func updateMeteo( meteoData :NSData){
-        do {
-            //var degree = "\u{00B0}"
-            
-            self.jsonData = try JSONSerialization.jsonObject(with: meteoData as Data, options: []) as! NSDictionary
-            
-            if let main = jsonData!["main"] as? NSDictionary {
-                if let temp = main["temp"] as? Double {
-                    cityTemp = String(format: "%.2f", temp)
-                    cityTempLabel.isHidden = false
-                    //Conv
-                    let tempconv = temp - 273.15
-                    let tempString : String = String(format: "%.1f" ,tempconv)
-                    cityTempLabel.text = tempString + "\u{00B0}"
-                    //cityTempLabel.text += degree
-                }
-            }
-            
-            
-            
-            
-            //if let weatherImage = jsonData!["weather"][0]["icon"].stringValue as? String {
-            //   print(weatherImage)
-            //}
-            
-        } catch {
-            //error handle here
-            
-        }
-        
-        
-        
 
-    
-    }
-   
-    @IBAction func unwindToHome(segue: UIStoryboardSegue) {
-        
-        print (segue.source)
-        let SrcViewController : BackgroundViewController = segue.source as! BackgroundViewController
-        if (SrcViewController.ImageChoice?.image != nil ){
-            self.background.image = SrcViewController.ImageChoice?.image
-        
-        }else{
-            self.background.image = nil
-        
-            self.color = (SrcViewController.ImageChoice?.backgroundColor)!
-            
-        }
-        // print("Menes Menes Menes")
-    }
-    
-    
 
 
     /*
