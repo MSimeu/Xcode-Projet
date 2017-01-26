@@ -355,8 +355,9 @@ class HomeViewController: UIViewController ,UITableViewDelegate , UITableViewDat
             DestViewController.titre = (sender as? String)!
              //Moification des son en fonction du sender cad du choix dans la table View
             if ((sender as? String) == "Hip-hop"){
-                
+                //ce sont les son par default
             }
+            
             if ((sender as? String) == "Techno"){
                 
                 //transfere de son

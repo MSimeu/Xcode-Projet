@@ -44,7 +44,7 @@ class Bouton: NSObject , AVAudioPlayerDelegate {
             // fonction qui jouer le son
             //lancement
             do {
-                //lancement du son avec le bon fichier audio
+                //ajout du chemin vers le son a l'audio player 
                 audioPlayerBtn = try AVAudioPlayer(contentsOf: audioFilePath)
                 
                 
