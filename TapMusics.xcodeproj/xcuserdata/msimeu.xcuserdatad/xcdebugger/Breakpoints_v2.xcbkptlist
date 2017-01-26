@@ -202,11 +202,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TapMusics/HomeViewController.swift"
-            timestampString = "507056428.398049"
+            timestampString = "507128473.141193"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "380"
-            endingLineNumber = "380"
+            startingLineNumber = "381"
+            endingLineNumber = "381"
             landmarkName = "prepare(for:sender:)"
             landmarkType = "7">
          </BreakpointContent>
